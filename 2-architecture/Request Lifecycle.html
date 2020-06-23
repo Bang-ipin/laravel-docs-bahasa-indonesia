@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://laravel.com/docs/7.x/lifecycle -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Request Lifecycle - Laravel - The PHP Framework For Web Artisans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+        <link rel="canonical" href="https://laravel.com/docs/7.x/lifecycle">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://laravel.com/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://laravel.com/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://laravel.com/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://laravel.com/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://laravel.com/img/favicon/safari-pinned-tab.svg" color="#ff2d20">
+    <link rel="shortcut icon" href="https://laravel.com/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ff2d20">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Load fonts -->
+    <link rel="stylesheet" href="folder/ins2wgm.css">
+
+    <!-- Load styles -->
+    <link rel="stylesheet" type="text/css" href="folder/app.css">
+
+    <!-- Load JS -->
+    <script src="folder/ga.js.download"></script><script src="folder/jquery.min.js.download"></script>
+
+<script id="_carbonads_projs" type="text/javascript" src="folder/CKYILK3E.json"></script></head>
+<body class="language-php">
+
+    <div class="sidebar_layout" id="docsScreen">
+
+        <div class="page_contain">
+            <div class="contain">
+                <aside class="sidebar">
+                    <a href="https://laravel.com/" class="logo">
+                        <img class="mark" src="folder/logomark.min.svg" alt="Laravel">
+                        <img class="type" src="folder/logotype.min.svg" alt="Laravel">
+                    </a>
+                    <nav>
+                        <div class="navigation_contain" style="display: block;">
+                            <div class="docs_sidebar">
+                               <ul>
+<li>
+<h2>Getting Started</h2>
+<ul>
+<li class="active"><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Installation.html">Installation</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Configuration.html">Configuration</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Directory%20Structure.html">Directory Structure</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Laravel%20Homestead.html">Homestead</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Laravel%20Valet.html">Valet</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Deployment.html">Deployment</a></li>
+</ul>
+</li>
+<li class="sub--on">
+<h2>Architecture Concepts</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Request%20Lifecycle.html">Request Lifecycle</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Service%20Container.html">Service Container</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Service%20Providers.html">Service Providers</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Facades.html">Facades</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Contracts.html">Contracts</a></li>
+</ul>
+</li>
+<li>
+<h2>The Basics</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Routing.html">Routing</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Middleware.html">Middleware</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/CSRF%20Protection.html">CSRF Protection</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Controllers.html">Controllers</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/HTTP%20Requests.html">Requests</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/HTTP%20Responses.html">Responses</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Views.html">Views</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/URL%20Generation.html">URL Generation</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/HTTP%20Session.html">Session</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Validation.html">Validation</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Error%20Handling.html">Error Handling</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Logging.html">Logging</a></li>
+</ul>
+</li>
+<li>
+<h2>Frontend</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/4-front-end/Blade%20Templates.html">Blade Templates</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/4-front-end/Localization.html">Localization</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/4-front-end/JavaScript%20&%20CSS%20Scaffolding.html">Frontend Scaffolding</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/4-front-end/Compiling%20Assets%20(Mix).html">Compiling Assets</a></li>
+</ul>
+</li>
+<li>
+<h2>Security</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Authentication.html">Authentication</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Authorization.html">Authorization</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Email%20Verification.html">Email Verification</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Encryption.html">Encryption</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Hashing.html">Hashing</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Resetting%20Passwords.html">Password Reset</a></li>
+</ul>
+</li>
+<li>
+<h2>Digging Deeper</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Artisan%20Console.html">Artisan Console</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Broadcasting.html">Broadcasting</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Cache.html">Cache</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Collections.html">Collections</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Events.html">Events</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/File%20Storage.html">File Storage</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Helpers.html">Helpers</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/HTTP%20Client.html">HTTP Client</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Mail.html">Mail</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Notifications.html">Notifications</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Package%20Development.html">Package Development</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Queues.html">Queues</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Task%20Scheduling.html">Task Scheduling</a></li>
+</ul>
+</li>
+<li>
+<h2>Database</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Getting%20Started.html">Getting Started</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Query%20Builder.html">Query Builder</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Pagination.html">Pagination</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Migrations.html">Migrations</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Seeding.html">Seeding</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Redis.html">Redis</a></li>
+</ul>
+</li>
+<li>
+<h2>Eloquent ORM</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Getting%20Started.html">Getting Started</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Relationships.html">Relationships</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Collections.html">Collections</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Mutators.html">Mutators</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20API%20Resources.html">API Resources</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Serialization.html">Serialization</a></li>
+</ul>
+</li>
+<li>
+<h2>Testing</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Testing_%20Getting%20Started.html">Getting Started</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/HTTP%20Tests.html">HTTP Tests</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Console%20Tests.html">Console Tests</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Laravel%20Dusk.html">Browser Tests</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Database%20Testing.html">Database</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Mocking.html">Mocking</a></li>
+</ul>
+</li>
+<li>
+<h2>Official Packages</h2>
+<ul>
+<li><a href="https://laravel.com/docs/7.x/billing">Cashier (Stripe)</a></li>
+<li><a href="#">Cashier (Mollie)</a></li>
+<li><a href="#">Dusk</a></li>
+<li><a href="#">Envoy</a></li>
+<li><a href="#">Horizon</a></li>
+<li><a href="#">Passport</a></li>
+<li><a href="#">Sanctum</a></li>
+<li><a href="#">Scout</a></li>
+<li><a href="#">Socialite</a></li>
+<li><a href="#">Telescope</a></li>
+</ul>
+</li>
+</ul>
+                            </div>
+
+                            <script async="" type="text/javascript" src="folder/carbon.js.download" id="_carbonads_js"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://forge.laravel.com/" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="folder/dabf8eec0afae2a669e68d8dc1092605.jpg" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://forge.laravel.com/" class="carbon-text" target="_blank" rel="noopener sponsored">Deploy Laravel and PHP applications on DigitalOcean, Linode, &amp; AWS.</a></span><a href="http://carbonads.net/?utm_source=laravelcom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+
+
+                        </div>
+                    </nav>
+                    <div class="trigger_contain">
+                        <a href="https://laravel.com/docs/7.x/lifecycle#" class="nav_trigger" aria-label="Menu">
+                            <div class="bar"></div>
+                        </a>
+                    </div>
+                </aside>
+
+                <section class="body_content">
+                    <header class="docs_actions">
+                        <div class="version_drop">
+                            <div class="input_group">
+                                <label>Version</label>
+                                <div class="custom_select">
+                                    <select id="version_switcher" aria-label="Laravel version">
+                                                                                    <option value="https://laravel.com/docs/master/lifecycle">Master</option>
+                                                                                    <option selected="" value="https://laravel.com/docs/7.x/lifecycle">7.x</option>
+                                                                                    <option value="https://laravel.com/docs/6.x/lifecycle">6.x</option>
+                                                                                    <option value="https://laravel.com/docs/5.8/lifecycle">5.8</option>
+                                                                                    <option value="https://laravel.com/docs/5.7/lifecycle">5.7</option>
+                                                                                    <option value="https://laravel.com/docs/5.6/lifecycle">5.6</option>
+                                                                                    <option value="https://laravel.com/docs/5.5/lifecycle">5.5</option>
+                                                                                    <option value="https://laravel.com/docs/5.4/lifecycle">5.4</option>
+                                                                                    <option value="https://laravel.com/docs/5.3/lifecycle">5.3</option>
+                                                                                    <option value="https://laravel.com/docs/5.2/lifecycle">5.2</option>
+                                                                                    <option value="https://laravel.com/docs/5.1/lifecycle">5.1</option>
+                                                                                    <option value="https://laravel.com/docs/5.0/lifecycle">5.0</option>
+                                                                                    <option value="https://laravel.com/docs/4.2/lifecycle">4.2</option>
+                                                                            </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search_contain">
+                            <div class="input_group search icon">
+                                <span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input type="text" class="search_input tt-input" id="search-docs-input" placeholder="Search Docs" aria-label="Search in the documentation" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: scandia-web, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0.5px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="tt-dataset-0"></div></span></span>
+                                <input type="submit" class="search_submit icon_display">
+                            </div>
+                        </div>
+                    </header>
+                    <section class="docs_body">
+                        <section class="docs_main">
+                            
+                            <h1>Request Lifecycle</h1>
+<ul>
+<li><a href="https://laravel.com/docs/7.x/lifecycle#introduction">Introduction</a></li>
+<li><a href="https://laravel.com/docs/7.x/lifecycle#lifecycle-overview">Lifecycle Overview</a></li>
+<li><a href="https://laravel.com/docs/7.x/lifecycle#focus-on-service-providers">Focus On Service Providers</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2 id="introduction"><a href="https://laravel.com/docs/7.x/lifecycle#introduction">Introduction</a></h2>
+<p>When using any tool in the "real world", you feel more confident if you understand how that tool works. Application development is no different. When you understand how your development tools function, you feel more comfortable and confident using them.</p>
+<p>The goal of this document is to give you a good, high-level overview of how the Laravel framework works. By getting to know the overall framework better, everything feels less "magical" and you will be more confident building your applications. If you don't understand all of the terms right away, don't lose heart! Just try to get a basic grasp of what is going on, and your knowledge will grow as you explore other sections of the documentation.</p>
+<p><a name="lifecycle-overview"></a></p>
+<h2 id="lifecycle-overview"><a href="https://laravel.com/docs/7.x/lifecycle#lifecycle-overview">Lifecycle Overview</a></h2>
+<h3>First Things</h3>
+<p>The entry point for all requests to a Laravel application is the <code class=" language-php"><span class="token keyword">public</span><span class="token operator">/</span>index<span class="token punctuation">.</span>php</code> file. All requests are directed to this file by your web server (Apache / Nginx) configuration. The <code class=" language-php">index<span class="token punctuation">.</span>php</code> file doesn't contain much code. Rather, it is a starting point for loading the rest of the framework.</p>
+<p>The <code class=" language-php">index<span class="token punctuation">.</span>php</code> file loads the Composer generated autoloader definition, and then retrieves an instance of the Laravel application from <code class=" language-php">bootstrap<span class="token operator">/</span>app<span class="token punctuation">.</span>php</code> script. The first action taken by Laravel itself is to create an instance of the application / <a href="https://laravel.com/docs/7.x/container">service container</a>.</p>
+<h3>HTTP / Console Kernels</h3>
+<p>Next, the incoming request is sent to either the HTTP kernel or the console kernel, depending on the type of request that is entering the application. These two kernels serve as the central location that all requests flow through. For now, let's just focus on the HTTP kernel, which is located in <code class=" language-php">app<span class="token operator">/</span>Http<span class="token operator">/</span>Kernel<span class="token punctuation">.</span>php</code>.</p>
+<p>The HTTP kernel extends the <code class=" language-php">Illuminate\<span class="token package">Foundation<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Kernel</span></code> class, which defines an array of <code class=" language-php">bootstrappers</code> that will be run before the request is executed. These bootstrappers configure error handling, configure logging, <a href="https://laravel.com/docs/7.x/configuration#environment-configuration">detect the application environment</a>, and perform other tasks that need to be done before the request is actually handled.</p>
+<p>The HTTP kernel also defines a list of HTTP <a href="https://laravel.com/docs/7.x/middleware">middleware</a> that all requests must pass through before being handled by the application. These middleware handle reading and writing the <a href="https://laravel.com/docs/7.x/session">HTTP session</a>, determining if the application is in maintenance mode, <a href="https://laravel.com/docs/7.x/csrf">verifying the CSRF token</a>, and more.</p>
+<p>The method signature for the HTTP kernel's <code class=" language-php">handle</code> method is quite simple: receive a <code class=" language-php">Request</code> and return a <code class=" language-php">Response</code>. Think of the Kernel as being a big black box that represents your entire application. Feed it HTTP requests and it will return HTTP responses.</p>
+<h4>Service Providers</h4>
+<p>One of the most important Kernel bootstrapping actions is loading the <a href="https://laravel.com/docs/7.x/providers">service providers</a> for your application. All of the service providers for the application are configured in the <code class=" language-php">config<span class="token operator">/</span>app<span class="token punctuation">.</span>php</code> configuration file's <code class=" language-php">providers</code> array. First, the <code class=" language-php">register</code> method will be called on all providers, then, once all providers have been registered, the <code class=" language-php">boot</code> method will be called.</p>
+<p>Service providers are responsible for bootstrapping all of the framework's various components, such as the database, queue, validation, and routing components. Since they bootstrap and configure every feature offered by the framework, service providers are the most important aspect of the entire Laravel bootstrap process.</p>
+<h4>Dispatch Request</h4>
+<p>Once the application has been bootstrapped and all service providers have been registered, the <code class=" language-php">Request</code> will be handed off to the router for dispatching. The router will dispatch the request to a route or controller, as well as run any route specific middleware.</p>
+<p><a name="focus-on-service-providers"></a></p>
+<h2 id="focus-on-service-providers"><a href="https://laravel.com/docs/7.x/lifecycle#focus-on-service-providers">Focus On Service Providers</a></h2>
+<p>Service providers are truly the key to bootstrapping a Laravel application. The application instance is created, the service providers are registered, and the request is handed to the bootstrapped application. It's really that simple!</p>
+<p>Having a firm grasp of how a Laravel application is built and bootstrapped via service providers is very valuable. Your application's default service providers are stored in the <code class=" language-php">app<span class="token operator">/</span>Providers</code> directory.</p>
+<p>By default, the <code class=" language-php">AppServiceProvider</code> is fairly empty. This provider is a great place to add your application's own bootstrapping and service container bindings. For large applications, you may wish to create several service providers, each with a more granular type of bootstrapping.</p>
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+<footer>
+    <div class="footer_contain" style="padding-top: 0;">
+        <div class="contain">
+            <section class="partner_block">
+                <div class="content">
+                    <h2>Become a Laravel Partner</h2>
+                    <p>Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project.</p>
+                </div>
+                                <a href="https://laravel.com/partners" class="btn"><span>Our Partners</span></a>
+                            </section>
+        </div>
+
+        <div class="footer_bg">
+            <div class="contain">
+                <div class="footer_content">
+                    <div class="logotype">
+                        <img src="folder/logotype.min.svg" alt="Laravel">
+                    </div>
+                    <div class="search_box">
+
+                    </div>
+                </div>
+                <div class="footer_content">
+                    <div class="footer_nav">
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Highlights</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://laravel.com/docs/7.x/releases">Release Notes</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/installation">Getting Started</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/routing">Routing</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/blade">Blade Templates</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/authentication">Authentication</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/authorization">Authorization</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/artisan">Artisan Console</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/database">Database</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/eloquent">Eloquent ORM</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/testing">Testing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Resources</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://laracasts.com/">Laracasts</a></li>
+                                    <li><a href="https://laravel-news.com/">Laravel News</a></li>
+                                    <li><a href="https://laracon.us/">Laracon</a></li>
+                                    <li><a href="https://laracon.eu/">Laracon EU</a></li>
+                                    <li><a href="https://laracon.com.au/">Laracon AU</a></li>
+                                    <li><a href="https://larajobs.com/">Jobs</a></li>
+                                    <li><a href="https://certification.laravel.com/">Certification</a></li>
+                                    <li><a href="https://laracasts.com/discuss">Forums</a></li>
+                                    <!-- <li><a href="http://www.laravelpodcast.com/">Podcast</a></li> -->
+                                    <!-- <li><a href="https://course.testdrivenlaravel.com/">Test-driven Laravel</a></li> -->
+                                    <!-- <li><a href="https://statamic.com/">Statamic</a></li> -->
+<!--                                     <li><a href="https://styleci.io/">StyleCI</a></li>
+                                    <li><a href="https://cachethq.io/">Cachet</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Partners</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://vehikl.com/">Vehikl</a></li>
+                                    <li><a href="https://tighten.co/">Tighten Co.</a></li>
+                                    <li><a href="https://kirschbaumdevelopment.com/">Kirschbaum</a></li>
+                                    <li><a href="https://www.byte5.net/">Byte 5</a></li>
+                                    <li><a href="https://64robots.com/">64Robots</a></li>
+                                    <li><a href="https://cubettech.com/">Cubet</a></li>
+                                    <li><a href="https://devsquad.com/">DevSquad</a></li>
+                                    <li><a href="https://www.ideil.com/">Ideil</a></li>
+                                    <li><a href="https://www.cyber-duck.co.uk/how-we-work/technology/laravel?utm_source=Laravel%20Partner&amp;utm_medium=Sponsorship">Cyber-Duck</a></li>
+                                    <li><a href="https://corporate.aboutyou.de/app/uploads/2019/08/INTRO-Pitch-I-AY-Tech.pdf?utm_source=laravelpartnersfindoutmore&amp;utm_medium=socialgroups&amp;utm_campaign=tech">ABOUT YOU</a></li>
+                                    <li><a href="https://www.a2design.biz/">A2 Design</a></li>
+                                    <li><a href="https://romegadigital.com/">Romega Software</a></li>
+                                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeOTE1G6zxSPbKdmQ59UKkL_Rja_ddAyG6Y6xxGdSGAWlNTFA/viewform">Become A Partner</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Ecosystem</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://vapor.laravel.com/">Vapor</a></li>
+                                    <li><a href="https://forge.laravel.com/">Forge</a></li>
+                                    <li><a href="https://envoyer.io/">Envoyer</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/horizon">Horizon</a></li>
+                                    <li><a href="https://lumen.laravel.com/">Lumen</a></li>
+                                    <li><a href="https://nova.laravel.com/">Nova</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/broadcasting">Echo</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/valet">Valet</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/mix">Mix</a></li>
+                                    <li><a href="https://spark.laravel.com/">Spark</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/billing">Cashier</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/homestead">Homestead</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/dusk">Dusk</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/passport">Passport</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/scout">Scout</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/socialite">Socialite</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/telescope">Telescope</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_info">
+                        <p class="small">Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in most web projects.</p>
+                        <p class="small copyright">Laravel is a Trademark of Taylor Otwell.<br>Copyright © 2011-2020 Laravel LLC.
+                        </p>
+                        <ul class="social_links">
+                            <li><a href="https://twitter.com/laravelphp"><img src="folder/twitter.min.svg" alt="Twitter"></a>
+                            </li>
+                            <li><a href="https://github.com/laravel"><img src="folder/github.min.svg" alt="GitHub"></a>
+                            </li>
+                            <li><a href="https://discord.gg/mPZNm7A"><img src="folder/discord.min.svg" alt="Discord"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://laravel.com/" class="logomark"><img src="folder/logomark.min.svg" alt="Laravel"></a>
+    </div>
+</footer>
+
+<script>
+    var algolia_app_id = 'BH4D9OD16A';
+    var algolia_search_key = '7dc4fe97e150304d1bf34f5043f178c4';
+    var version = '7.x';
+</script>
+
+<script id="search_suggestion_template" type="text/template">
+	<div class="autocomplete-wrapper">
+		{{#_highlightResult.hierarchy.lvl0.value}}
+		<div class="h1">
+			{{{ _highlightResult.hierarchy.lvl0.value }}}
+		</div>
+		{{/_highlightResult.hierarchy.lvl0.value}}
+
+		<div class="sub-section">
+			{{#_highlightResult.hierarchy.lvl1.value}}
+			<div class="h2">
+				<span class="hash">#</span> {{{ _highlightResult.hierarchy.lvl1.value }}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl1.value}}
+
+			{{#_highlightResult.hierarchy.lvl2.value}}
+			<div class="h3">
+				> {{{ _highlightResult.hierarchy.lvl2.value }}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl2.value}}
+
+			{{#_highlightResult.hierarchy.lvl3.value}}
+			<div class="h4">
+				> {{{ _highlightResult.hierarchy.lvl3.value }}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl3.value}}
+
+			{{#_highlightResult.hierarchy.lvl4.value}}
+			<div class="h5">
+				> {{{_highlightResult.hierarchy.lvl4.value}}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl4.value}}
+
+			{{#_highlightResult.hierarchy.lvl5.value}}
+			<div class="h6">
+				> {{{_highlightResult.hierarchy.lvl5.value}}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl5.value}}
+		</div>
+
+		{{#_highlightResult.content}}
+		<div class="content">
+			{{{ _highlightResult.content.value }}}
+		</div>
+		{{/_highlightResult.content}}
+	</div>
+</script>
+
+<script id="search_empty_template" type="text/template">
+	<div class="autocomplete-wrapper empty">
+		<div class="h2">We didn't find any result for "{{query}}". Sorry!</div>
+	</div>
+</script>
+
+<script id="search_footer_template" type="text/template">
+	<div class="footer">
+		<a target="_blank" href="https://www.algolia.com/?utm_source=laravel&utm_medium=link&utm_campaign=laravel_documentation_search">
+            <img width="105" src="/img/icons/algolia.min.svg" alt="Algolia">
+			<div style="clear: both"></div>
+		</a>
+	</div>
+</script>
+<script src="folder/app.js.download"></script>
+
+<script>
+    var _gaq=[['_setAccount','UA-23865777-1'],['_trackPageview']];
+    (function(d,t){
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)
+    }(document,'script'));
+</script>
+
+
+</body></html>

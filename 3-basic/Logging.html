@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://laravel.com/docs/7.x/logging -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Logging - Laravel - The PHP Framework For Web Artisans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+        <link rel="canonical" href="https://laravel.com/docs/7.x/logging">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://laravel.com/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://laravel.com/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://laravel.com/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://laravel.com/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://laravel.com/img/favicon/safari-pinned-tab.svg" color="#ff2d20">
+    <link rel="shortcut icon" href="https://laravel.com/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ff2d20">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Load fonts -->
+    <link rel="stylesheet" href="folder/ins2wgm.css">
+
+    <!-- Load styles -->
+    <link rel="stylesheet" type="text/css" href="folder/app.css">
+
+    <!-- Load JS -->
+    <script src="folder/ga.js.download"></script><script src="folder/jquery.min.js.download"></script>
+
+<script id="_carbonads_projs" type="text/javascript" src="folder/CKYILK3E.json"></script></head>
+<body class="language-php">
+
+    <div class="sidebar_layout" id="docsScreen">
+
+        <div class="page_contain">
+            <div class="contain">
+                <aside class="sidebar">
+                    <a href="https://laravel.com/" class="logo">
+                        <img class="mark" src="folder/logomark.min.svg" alt="Laravel">
+                        <img class="type" src="folder/logotype.min.svg" alt="Laravel">
+                    </a>
+                    <nav>
+                        <div class="navigation_contain" style="display: block;">
+                            <div class="docs_sidebar">
+                                <ul>
+<li>
+<h2>Getting Started</h2>
+<ul>
+<li class="active"><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Installation.html">Installation</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Configuration.html">Configuration</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Directory%20Structure.html">Directory Structure</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Laravel%20Homestead.html">Homestead</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Laravel%20Valet.html">Valet</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Deployment.html">Deployment</a></li>
+</ul>
+</li>
+<li>
+<h2>Architecture Concepts</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Request%20Lifecycle.html">Request Lifecycle</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Service%20Container.html">Service Container</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Service%20Providers.html">Service Providers</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Facades.html">Facades</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Contracts.html">Contracts</a></li>
+</ul>
+</li>
+<li class="sub--on">
+<h2>The Basics</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Routing.html">Routing</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Middleware.html">Middleware</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/CSRF%20Protection.html">CSRF Protection</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Controllers.html">Controllers</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/HTTP%20Requests.html">Requests</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/HTTP%20Responses.html">Responses</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Views.html">Views</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/URL%20Generation.html">URL Generation</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/HTTP%20Session.html">Session</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Validation.html">Validation</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Error%20Handling.html">Error Handling</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Logging.html">Logging</a></li>
+</ul>
+</li>
+<li>
+<h2>Frontend</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/4-front-end/Blade%20Templates.html">Blade Templates</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/4-front-end/Localization.html">Localization</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/4-front-end/JavaScript%20&%20CSS%20Scaffolding.html">Frontend Scaffolding</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/4-front-end/Compiling%20Assets%20(Mix).html">Compiling Assets</a></li>
+</ul>
+</li>
+<li>
+<h2>Security</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Authentication.html">Authentication</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Authorization.html">Authorization</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Email%20Verification.html">Email Verification</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Encryption.html">Encryption</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Hashing.html">Hashing</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Resetting%20Passwords.html">Password Reset</a></li>
+</ul>
+</li>
+<li>
+<h2>Digging Deeper</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Artisan%20Console.html">Artisan Console</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Broadcasting.html">Broadcasting</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Cache.html">Cache</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Collections.html">Collections</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Events.html">Events</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/File%20Storage.html">File Storage</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Helpers.html">Helpers</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/HTTP%20Client.html">HTTP Client</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Mail.html">Mail</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Notifications.html">Notifications</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Package%20Development.html">Package Development</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Queues.html">Queues</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Task%20Scheduling.html">Task Scheduling</a></li>
+</ul>
+</li>
+<li>
+<h2>Database</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Getting%20Started.html">Getting Started</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Query%20Builder.html">Query Builder</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Pagination.html">Pagination</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Migrations.html">Migrations</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Seeding.html">Seeding</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Redis.html">Redis</a></li>
+</ul>
+</li>
+<li>
+<h2>Eloquent ORM</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Getting%20Started.html">Getting Started</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Relationships.html">Relationships</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Collections.html">Collections</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Mutators.html">Mutators</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20API%20Resources.html">API Resources</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Serialization.html">Serialization</a></li>
+</ul>
+</li>
+<li>
+<h2>Testing</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Testing_%20Getting%20Started.html">Getting Started</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/HTTP%20Tests.html">HTTP Tests</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Console%20Tests.html">Console Tests</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Laravel%20Dusk.html">Browser Tests</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Database%20Testing.html">Database</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Mocking.html">Mocking</a></li>
+</ul>
+</li>
+<li>
+<h2>Official Packages</h2>
+<ul>
+<li><a href="https://laravel.com/docs/7.x/billing">Cashier (Stripe)</a></li>
+<li><a href="#">Cashier (Mollie)</a></li>
+<li><a href="#">Dusk</a></li>
+<li><a href="#">Envoy</a></li>
+<li><a href="#">Horizon</a></li>
+<li><a href="#">Passport</a></li>
+<li><a href="#">Sanctum</a></li>
+<li><a href="#">Scout</a></li>
+<li><a href="#">Socialite</a></li>
+<li><a href="#">Telescope</a></li>
+</ul>
+</li>
+</ul>
+                            </div>
+
+                            <script async="" type="text/javascript" src="folder/carbon.js.download" id="_carbonads_js"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://forge.laravel.com/" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="folder/dabf8eec0afae2a669e68d8dc1092605.jpg" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://forge.laravel.com/" class="carbon-text" target="_blank" rel="noopener sponsored">Deploy Laravel and PHP applications on DigitalOcean, Linode, &amp; AWS.</a></span><a href="http://carbonads.net/?utm_source=laravelcom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+
+
+                        </div>
+                    </nav>
+                    <div class="trigger_contain">
+                        <a href="https://laravel.com/docs/7.x/logging#" class="nav_trigger" aria-label="Menu">
+                            <div class="bar"></div>
+                        </a>
+                    </div>
+                </aside>
+
+                <section class="body_content">
+                    <header class="docs_actions">
+                        <div class="version_drop">
+                            <div class="input_group">
+                                <label>Version</label>
+                                <div class="custom_select">
+                                    <select id="version_switcher" aria-label="Laravel version">
+                                                                                    <option value="https://laravel.com/docs/master/logging">Master</option>
+                                                                                    <option selected="" value="https://laravel.com/docs/7.x/logging">7.x</option>
+                                                                                    <option value="https://laravel.com/docs/6.x/logging">6.x</option>
+                                                                                    <option value="https://laravel.com/docs/5.8/logging">5.8</option>
+                                                                                    <option value="https://laravel.com/docs/5.7/logging">5.7</option>
+                                                                                    <option value="https://laravel.com/docs/5.6/logging">5.6</option>
+                                                                                    <option value="https://laravel.com/docs/5.5/logging">5.5</option>
+                                                                                    <option value="https://laravel.com/docs/5.4/logging">5.4</option>
+                                                                                    <option value="https://laravel.com/docs/5.3/logging">5.3</option>
+                                                                                    <option value="https://laravel.com/docs/5.2/logging">5.2</option>
+                                                                                    <option value="https://laravel.com/docs/5.1/logging">5.1</option>
+                                                                                    <option value="https://laravel.com/docs/5.0/logging">5.0</option>
+                                                                                    <option value="https://laravel.com/docs/4.2/logging">4.2</option>
+                                                                            </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search_contain">
+                            <div class="input_group search icon">
+                                <span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input type="text" class="search_input tt-input" id="search-docs-input" placeholder="Search Docs" aria-label="Search in the documentation" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: scandia-web, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0.5px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="tt-dataset-0"></div></span></span>
+                                <input type="submit" class="search_submit icon_display">
+                            </div>
+                        </div>
+                    </header>
+                    <section class="docs_body">
+                        <section class="docs_main">
+                            
+                            <h1>Logging</h1>
+<ul>
+<li><a href="https://laravel.com/docs/7.x/logging#introduction">Introduction</a></li>
+<li><a href="https://laravel.com/docs/7.x/logging#configuration">Configuration</a>
+<ul>
+<li><a href="https://laravel.com/docs/7.x/logging#building-log-stacks">Building Log Stacks</a></li>
+</ul></li>
+<li><a href="https://laravel.com/docs/7.x/logging#writing-log-messages">Writing Log Messages</a>
+<ul>
+<li><a href="https://laravel.com/docs/7.x/logging#writing-to-specific-channels">Writing To Specific Channels</a></li>
+</ul></li>
+<li><a href="https://laravel.com/docs/7.x/logging#advanced-monolog-channel-customization">Advanced Monolog Channel Customization</a>
+<ul>
+<li><a href="https://laravel.com/docs/7.x/logging#customizing-monolog-for-channels">Customizing Monolog For Channels</a></li>
+<li><a href="https://laravel.com/docs/7.x/logging#creating-monolog-handler-channels">Creating Monolog Handler Channels</a></li>
+<li><a href="https://laravel.com/docs/7.x/logging#creating-channels-via-factories">Creating Channels Via Factories</a></li>
+</ul></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2 id="introduction"><a href="https://laravel.com/docs/7.x/logging#introduction">Introduction</a></h2>
+<p>To help you learn more about what's happening within your application, Laravel provides robust logging services that allow you to log messages to files, the system error log, and even to Slack to notify your entire team.</p>
+<p>Under the hood, Laravel utilizes the <a href="https://github.com/Seldaek/monolog">Monolog</a> library, which provides support for a variety of powerful log handlers. Laravel makes it a cinch to configure these handlers, allowing you to mix and match them to customize your application's log handling.</p>
+<p><a name="configuration"></a></p>
+<h2 id="configuration"><a href="https://laravel.com/docs/7.x/logging#configuration">Configuration</a></h2>
+<p>All of the configuration for your application's logging system is housed in the <code class=" language-php">config<span class="token operator">/</span>logging<span class="token punctuation">.</span>php</code> configuration file. This file allows you to configure your application's log channels, so be sure to review each of the available channels and their options. We'll review a few common options below.</p>
+<p>By default, Laravel will use the <code class=" language-php">stack</code> channel when logging messages. The <code class=" language-php">stack</code> channel is used to aggregate multiple log channels into a single channel. For more information on building stacks, check out the <a href="https://laravel.com/docs/7.x/logging#building-log-stacks">documentation below</a>.</p>
+<h4>Configuring The Channel Name</h4>
+<p>By default, Monolog is instantiated with a "channel name" that matches the current environment, such as <code class=" language-php">production</code> or <code class=" language-php">local</code>. To change this value, add a <code class=" language-php">name</code> option to your channel's configuration:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token single-quoted-string string">'stack'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+    <span class="token single-quoted-string string">'driver'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'stack'</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">'name'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'channel-name'</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">'channels'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'single'</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">'slack'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span></code></pre>
+<h4>Available Channel Drivers</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class=" language-php">stack</code></td>
+<td>A wrapper to facilitate creating "multi-channel" channels</td>
+</tr>
+<tr>
+<td><code class=" language-php">single</code></td>
+<td>A single file or path based logger channel (<code class=" language-php">StreamHandler</code>)</td>
+</tr>
+<tr>
+<td><code class=" language-php">daily</code></td>
+<td>A <code class=" language-php">RotatingFileHandler</code> based Monolog driver which rotates daily</td>
+</tr>
+<tr>
+<td><code class=" language-php">slack</code></td>
+<td>A <code class=" language-php">SlackWebhookHandler</code> based Monolog driver</td>
+</tr>
+<tr>
+<td><code class=" language-php">papertrail</code></td>
+<td>A <code class=" language-php">SyslogUdpHandler</code> based Monolog driver</td>
+</tr>
+<tr>
+<td><code class=" language-php">syslog</code></td>
+<td>A <code class=" language-php">SyslogHandler</code> based Monolog driver</td>
+</tr>
+<tr>
+<td><code class=" language-php">errorlog</code></td>
+<td>A <code class=" language-php">ErrorLogHandler</code> based Monolog driver</td>
+</tr>
+<tr>
+<td><code class=" language-php">monolog</code></td>
+<td>A Monolog factory driver that may use any supported Monolog handler</td>
+</tr>
+<tr>
+<td><code class=" language-php">custom</code></td>
+<td>A driver that calls a specified factory to create a channel</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div class="callout"><div class="icon purple"><img src="folder/lightbulb.min.svg"></div><p class="content"> Check out the documentation on <a href="https://laravel.com/docs/7.x/logging#advanced-monolog-channel-customization">advanced channel customization</a> to learn more about the <code class=" language-php">monolog</code> and <code class=" language-php">custom</code> drivers.</p></div>
+</blockquote>
+<h4>Configuring The Single and Daily Channels</h4>
+<p>The <code class=" language-php">single</code> and <code class=" language-php">daily</code> channels have three optional configuration options: <code class=" language-php">bubble</code>, <code class=" language-php">permission</code>, and <code class=" language-php">locking</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class=" language-php">bubble</code></td>
+<td>Indicates if messages should bubble up to other channels after being handled</td>
+<td><code class=" language-php"><span class="token boolean constant">true</span></code></td>
+</tr>
+<tr>
+<td><code class=" language-php">permission</code></td>
+<td>The log file's permissions</td>
+<td><code class=" language-php"><span class="token number">0644</span></code></td>
+</tr>
+<tr>
+<td><code class=" language-php">locking</code></td>
+<td>Attempt to lock the log file before writing to it</td>
+<td><code class=" language-php"><span class="token boolean constant">false</span></code></td>
+</tr>
+</tbody>
+</table>
+<h4>Configuring The Papertrail Channel</h4>
+<p>The <code class=" language-php">papertrail</code> channel requires the <code class=" language-php">url</code> and <code class=" language-php">port</code> configuration options. You can obtain these values from <a href="https://help.papertrailapp.com/kb/configuration/configuring-centralized-logging-from-php-apps/#send-events-from-php-app">Papertrail</a>.</p>
+<h4>Configuring The Slack Channel</h4>
+<p>The <code class=" language-php">slack</code> channel requires a <code class=" language-php">url</code> configuration option. This URL should match a URL for an <a href="https://slack.com/apps/A0F7XDUAZ-incoming-webhooks">incoming webhook</a> that you have configured for your Slack team. By default, Slack will only receive logs at the <code class=" language-php">critical</code> level and above; however, you can adjust this in your <code class=" language-php">logging</code> configuration file.</p>
+<p><a name="building-log-stacks"></a></p>
+<h3 id="building-log-stacks"><a href="https://laravel.com/docs/7.x/logging#building-log-stacks">Building Log Stacks</a></h3>
+<p>As previously mentioned, the <code class=" language-php">stack</code> driver allows you to combine multiple channels into a single log channel. To illustrate how to use log stacks, let's take a look at an example configuration that you might see in a production application:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token single-quoted-string string">'channels'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+    <span class="token single-quoted-string string">'stack'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+        <span class="token single-quoted-string string">'driver'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'stack'</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">'channels'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'syslog'</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">'slack'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+    <span class="token single-quoted-string string">'syslog'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+        <span class="token single-quoted-string string">'driver'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'syslog'</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">'level'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'debug'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+    <span class="token single-quoted-string string">'slack'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+        <span class="token single-quoted-string string">'driver'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'slack'</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">'url'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">env</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'LOG_SLACK_WEBHOOK_URL'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">'username'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'Laravel Log'</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">'emoji'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">':boom:'</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">'level'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'critical'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span></code></pre>
+<p>Let's dissect this configuration. First, notice our <code class=" language-php">stack</code> channel aggregates two other channels via its <code class=" language-php">channels</code> option: <code class=" language-php">syslog</code> and <code class=" language-php">slack</code>. So, when logging messages, both of these channels will have the opportunity to log the message.</p>
+<h4>Log Levels</h4>
+<p>Take note of the <code class=" language-php">level</code> configuration option present on the <code class=" language-php">syslog</code> and <code class=" language-php">slack</code> channel configurations in the example above. This option determines the minimum "level" a message must be in order to be logged by the channel. Monolog, which powers Laravel's logging services, offers all of the log levels defined in the <a href="https://tools.ietf.org/html/rfc5424">RFC 5424 specification</a>: <strong>emergency</strong>, <strong>alert</strong>, <strong>critical</strong>, <strong>error</strong>, <strong>warning</strong>, <strong>notice</strong>, <strong>info</strong>, and <strong>debug</strong>.</p>
+<p>So, imagine we log a message using the <code class=" language-php">debug</code> method:</p>
+<pre class=" language-php"><code class=" language-php">Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">debug</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'An informational message.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Given our configuration, the <code class=" language-php">syslog</code> channel will write the message to the system log; however, since the error message is not <code class=" language-php">critical</code> or above, it will not be sent to Slack. However, if we log an <code class=" language-php">emergency</code> message, it will be sent to both the system log and Slack since the <code class=" language-php">emergency</code> level is above our minimum level threshold for both channels:</p>
+<pre class=" language-php"><code class=" language-php">Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">emergency</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'The system is down!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><a name="writing-log-messages"></a></p>
+<h2 id="writing-log-messages"><a href="https://laravel.com/docs/7.x/logging#writing-log-messages">Writing Log Messages</a></h2>
+<p>You may write information to the logs using the <code class=" language-php">Log</code> <a href="https://laravel.com/docs/7.x/facades">facade</a>. As previously mentioned, the logger provides the eight logging levels defined in the <a href="https://tools.ietf.org/html/rfc5424">RFC 5424 specification</a>: <strong>emergency</strong>, <strong>alert</strong>, <strong>critical</strong>, <strong>error</strong>, <strong>warning</strong>, <strong>notice</strong>, <strong>info</strong> and <strong>debug</strong>:</p>
+<pre class=" language-php"><code class=" language-php">Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">emergency</span><span class="token punctuation">(</span><span class="token variable">$message</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">alert</span><span class="token punctuation">(</span><span class="token variable">$message</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">critical</span><span class="token punctuation">(</span><span class="token variable">$message</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token variable">$message</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">warning</span><span class="token punctuation">(</span><span class="token variable">$message</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">notice</span><span class="token punctuation">(</span><span class="token variable">$message</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token variable">$message</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">debug</span><span class="token punctuation">(</span><span class="token variable">$message</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>So, you may call any of these methods to log a message for the corresponding level. By default, the message will be written to the default log channel as configured by your <code class=" language-php">config<span class="token operator">/</span>logging<span class="token punctuation">.</span>php</code> configuration file:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Controllers</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">App<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Controllers<span class="token punctuation">\</span>Controller</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">App<span class="token punctuation">\</span>User</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Support<span class="token punctuation">\</span>Facades<span class="token punctuation">\</span>Log</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * Show the profile for the given user.
+     *
+     * @param  int  $id
+     * @return Response
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">showProfile</span><span class="token punctuation">(</span><span class="token variable">$id</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'Showing user profile for user: '</span><span class="token punctuation">.</span><span class="token variable">$id</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token function">view</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'user.profile'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'user'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> User<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">findOrFail</span><span class="token punctuation">(</span><span class="token variable">$id</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></span></code></pre>
+<h4>Contextual Information</h4>
+<p>An array of contextual data may also be passed to the log methods. This contextual data will be formatted and displayed with the log message:</p>
+<pre class=" language-php"><code class=" language-php">Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'User failed to login.'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'id'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$user</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">id</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><a name="writing-to-specific-channels"></a></p>
+<h3 id="writing-to-specific-channels"><a href="https://laravel.com/docs/7.x/logging#writing-to-specific-channels">Writing To Specific Channels</a></h3>
+<p>Sometimes you may wish to log a message to a channel other than your application's default channel. You may use the <code class=" language-php">channel</code> method on the <code class=" language-php">Log</code> facade to retrieve and log to any channel defined in your configuration file:</p>
+<pre class=" language-php"><code class=" language-php">Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">channel</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'slack'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'Something happened!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>If you would like to create an on-demand logging stack consisting of multiple channels, you may use the <code class=" language-php">stack</code> method:</p>
+<pre class=" language-php"><code class=" language-php">Log<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">stack</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token single-quoted-string string">'single'</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">'slack'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'Something happened!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><a name="advanced-monolog-channel-customization"></a></p>
+<h2 id="advanced-monolog-channel-customization"><a href="https://laravel.com/docs/7.x/logging#advanced-monolog-channel-customization">Advanced Monolog Channel Customization</a></h2>
+<p><a name="customizing-monolog-for-channels"></a></p>
+<h3 id="customizing-monolog-for-channels"><a href="https://laravel.com/docs/7.x/logging#customizing-monolog-for-channels">Customizing Monolog For Channels</a></h3>
+<p>Sometimes you may need complete control over how Monolog is configured for an existing channel. For example, you may want to configure a custom Monolog <code class=" language-php">FormatterInterface</code> implementation for a given channel's handlers.</p>
+<p>To get started, define a <code class=" language-php">tap</code> array on the channel's configuration. The <code class=" language-php">tap</code> array should contain a list of classes that should have an opportunity to customize (or "tap" into) the Monolog instance after it is created:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token single-quoted-string string">'single'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+    <span class="token single-quoted-string string">'driver'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'single'</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">'tap'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>App\<span class="token package">Logging<span class="token punctuation">\</span>CustomizeFormatter</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">'path'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">storage_path</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'logs/laravel.log'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">'level'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'debug'</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span></code></pre>
+<p>Once you have configured the <code class=" language-php">tap</code> option on your channel, you're ready to define the class that will customize your Monolog instance. This class only needs a single method: <code class=" language-php">__invoke</code>, which receives an <code class=" language-php">Illuminate\<span class="token package">Log<span class="token punctuation">\</span>Logger</span></code> instance. The <code class=" language-php">Illuminate\<span class="token package">Log<span class="token punctuation">\</span>Logger</span></code> instance proxies all method calls to the underlying Monolog instance:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Logging</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Monolog<span class="token punctuation">\</span>Formatter<span class="token punctuation">\</span>LineFormatter</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">CustomizeFormatter</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * Customize the given logger instance.
+     *
+     * @param  \Illuminate\Log\Logger  $logger
+     * @return void
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__invoke</span><span class="token punctuation">(</span><span class="token variable">$logger</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$logger</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getHandlers</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token variable">$handler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token variable">$handler</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setFormatter</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">LineFormatter</span><span class="token punctuation">(</span>
+                <span class="token single-quoted-string string">'[%datetime%] %channel%.%level_name%: %message% %context% %extra%'</span>
+            <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></span></code></pre>
+<blockquote>
+<div class="callout"><div class="icon purple"><img src="folder/lightbulb.min.svg"></div><p class="content"> All of your "tap" classes are resolved by the <a href="https://laravel.com/docs/7.x/container">service container</a>, so any constructor dependencies they require will automatically be injected.</p></div>
+</blockquote>
+<p><a name="creating-monolog-handler-channels"></a></p>
+<h3 id="creating-monolog-handler-channels"><a href="https://laravel.com/docs/7.x/logging#creating-monolog-handler-channels">Creating Monolog Handler Channels</a></h3>
+<p>Monolog has a variety of <a href="https://github.com/Seldaek/monolog/tree/master/src/Monolog/Handler">available handlers</a>. In some cases, the type of logger you wish to create is merely a Monolog driver with an instance of a specific handler.  These channels can be created using the <code class=" language-php">monolog</code> driver.</p>
+<p>When using the <code class=" language-php">monolog</code> driver, the <code class=" language-php">handler</code> configuration option is used to specify which handler will be instantiated. Optionally, any constructor parameters the handler needs may be specified using the <code class=" language-php">with</code> configuration option:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token single-quoted-string string">'logentries'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+    <span class="token single-quoted-string string">'driver'</span>  <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'monolog'</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">'handler'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Monolog\<span class="token package">Handler<span class="token punctuation">\</span>SyslogUdpHandler</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">'with'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+        <span class="token single-quoted-string string">'host'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'my.logentries.internal.datahubhost.company.com'</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">'port'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'10000'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span></code></pre>
+<h4>Monolog Formatters</h4>
+<p>When using the <code class=" language-php">monolog</code> driver, the Monolog <code class=" language-php">LineFormatter</code> will be used as the default formatter. However, you may customize the type of formatter passed to the handler using the <code class=" language-php">formatter</code> and <code class=" language-php">formatter_with</code> configuration options:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token single-quoted-string string">'browser'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+    <span class="token single-quoted-string string">'driver'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'monolog'</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">'handler'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Monolog\<span class="token package">Handler<span class="token punctuation">\</span>BrowserConsoleHandler</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">'formatter'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Monolog\<span class="token package">Formatter<span class="token punctuation">\</span>HtmlFormatter</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">'formatter_with'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+        <span class="token single-quoted-string string">'dateFormat'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'Y-m-d'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span></code></pre>
+<p>If you are using a Monolog handler that is capable of providing its own formatter, you may set the value of the <code class=" language-php">formatter</code> configuration option to <code class=" language-php"><span class="token keyword">default</span></code>:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token single-quoted-string string">'newrelic'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+    <span class="token single-quoted-string string">'driver'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'monolog'</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">'handler'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Monolog\<span class="token package">Handler<span class="token punctuation">\</span>NewRelicHandler</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">'formatter'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'default'</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span></code></pre>
+<p><a name="creating-channels-via-factories"></a></p>
+<h3 id="creating-channels-via-factories"><a href="https://laravel.com/docs/7.x/logging#creating-channels-via-factories">Creating Channels Via Factories</a></h3>
+<p>If you would like to define an entirely custom channel in which you have full control over Monolog's instantiation and configuration, you may specify a <code class=" language-php">custom</code> driver type in your <code class=" language-php">config<span class="token operator">/</span>logging<span class="token punctuation">.</span>php</code> configuration file. Your configuration should include a <code class=" language-php">via</code> option to point to the factory class which will be invoked to create the Monolog instance:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token single-quoted-string string">'channels'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+    <span class="token single-quoted-string string">'custom'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+        <span class="token single-quoted-string string">'driver'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'custom'</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">'via'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> App\<span class="token package">Logging<span class="token punctuation">\</span>CreateCustomLogger</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span></code></pre>
+<p>Once you have configured the <code class=" language-php">custom</code> channel, you're ready to define the class that will create your Monolog instance. This class only needs a single method: <code class=" language-php">__invoke</code>, which should return the Monolog instance:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Logging</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Monolog<span class="token punctuation">\</span>Logger</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">CreateCustomLogger</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * Create a custom Monolog instance.
+     *
+     * @param  array  $config
+     * @return \Monolog\Logger
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__invoke</span><span class="token punctuation">(</span><span class="token keyword">array</span> <span class="token variable">$config</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Logger</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></span></code></pre>
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+<footer>
+    <div class="footer_contain" style="padding-top: 0;">
+        <div class="contain">
+            <section class="partner_block">
+                <div class="content">
+                    <h2>Become a Laravel Partner</h2>
+                    <p>Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project.</p>
+                </div>
+                                <a href="https://laravel.com/partners" class="btn"><span>Our Partners</span></a>
+                            </section>
+        </div>
+
+        <div class="footer_bg">
+            <div class="contain">
+                <div class="footer_content">
+                    <div class="logotype">
+                        <img src="folder/logotype.min.svg" alt="Laravel">
+                    </div>
+                    <div class="search_box">
+
+                    </div>
+                </div>
+                <div class="footer_content">
+                    <div class="footer_nav">
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Highlights</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://laravel.com/docs/7.x/releases">Release Notes</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/installation">Getting Started</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/routing">Routing</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/blade">Blade Templates</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/authentication">Authentication</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/authorization">Authorization</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/artisan">Artisan Console</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/database">Database</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/eloquent">Eloquent ORM</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/testing">Testing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Resources</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://laracasts.com/">Laracasts</a></li>
+                                    <li><a href="https://laravel-news.com/">Laravel News</a></li>
+                                    <li><a href="https://laracon.us/">Laracon</a></li>
+                                    <li><a href="https://laracon.eu/">Laracon EU</a></li>
+                                    <li><a href="https://laracon.com.au/">Laracon AU</a></li>
+                                    <li><a href="https://larajobs.com/">Jobs</a></li>
+                                    <li><a href="https://certification.laravel.com/">Certification</a></li>
+                                    <li><a href="https://laracasts.com/discuss">Forums</a></li>
+                                    <!-- <li><a href="http://www.laravelpodcast.com/">Podcast</a></li> -->
+                                    <!-- <li><a href="https://course.testdrivenlaravel.com/">Test-driven Laravel</a></li> -->
+                                    <!-- <li><a href="https://statamic.com/">Statamic</a></li> -->
+<!--                                     <li><a href="https://styleci.io/">StyleCI</a></li>
+                                    <li><a href="https://cachethq.io/">Cachet</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Partners</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://vehikl.com/">Vehikl</a></li>
+                                    <li><a href="https://tighten.co/">Tighten Co.</a></li>
+                                    <li><a href="https://kirschbaumdevelopment.com/">Kirschbaum</a></li>
+                                    <li><a href="https://www.byte5.net/">Byte 5</a></li>
+                                    <li><a href="https://64robots.com/">64Robots</a></li>
+                                    <li><a href="https://cubettech.com/">Cubet</a></li>
+                                    <li><a href="https://devsquad.com/">DevSquad</a></li>
+                                    <li><a href="https://www.ideil.com/">Ideil</a></li>
+                                    <li><a href="https://www.cyber-duck.co.uk/how-we-work/technology/laravel?utm_source=Laravel%20Partner&amp;utm_medium=Sponsorship">Cyber-Duck</a></li>
+                                    <li><a href="https://corporate.aboutyou.de/app/uploads/2019/08/INTRO-Pitch-I-AY-Tech.pdf?utm_source=laravelpartnersfindoutmore&amp;utm_medium=socialgroups&amp;utm_campaign=tech">ABOUT YOU</a></li>
+                                    <li><a href="https://www.a2design.biz/">A2 Design</a></li>
+                                    <li><a href="https://romegadigital.com/">Romega Software</a></li>
+                                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeOTE1G6zxSPbKdmQ59UKkL_Rja_ddAyG6Y6xxGdSGAWlNTFA/viewform">Become A Partner</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Ecosystem</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://vapor.laravel.com/">Vapor</a></li>
+                                    <li><a href="https://forge.laravel.com/">Forge</a></li>
+                                    <li><a href="https://envoyer.io/">Envoyer</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/horizon">Horizon</a></li>
+                                    <li><a href="https://lumen.laravel.com/">Lumen</a></li>
+                                    <li><a href="https://nova.laravel.com/">Nova</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/broadcasting">Echo</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/valet">Valet</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/mix">Mix</a></li>
+                                    <li><a href="https://spark.laravel.com/">Spark</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/billing">Cashier</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/homestead">Homestead</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/dusk">Dusk</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/passport">Passport</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/scout">Scout</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/socialite">Socialite</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/telescope">Telescope</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_info">
+                        <p class="small">Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in most web projects.</p>
+                        <p class="small copyright">Laravel is a Trademark of Taylor Otwell.<br>Copyright © 2011-2020 Laravel LLC.
+                        </p>
+                        <ul class="social_links">
+                            <li><a href="https://twitter.com/laravelphp"><img src="folder/twitter.min.svg" alt="Twitter"></a>
+                            </li>
+                            <li><a href="https://github.com/laravel"><img src="folder/github.min.svg" alt="GitHub"></a>
+                            </li>
+                            <li><a href="https://discord.gg/mPZNm7A"><img src="folder/discord.min.svg" alt="Discord"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://laravel.com/" class="logomark"><img src="folder/logomark.min.svg" alt="Laravel"></a>
+    </div>
+</footer>
+
+<script>
+    var algolia_app_id = 'BH4D9OD16A';
+    var algolia_search_key = '7dc4fe97e150304d1bf34f5043f178c4';
+    var version = '7.x';
+</script>
+
+<script id="search_suggestion_template" type="text/template">
+	<div class="autocomplete-wrapper">
+		{{#_highlightResult.hierarchy.lvl0.value}}
+		<div class="h1">
+			{{{ _highlightResult.hierarchy.lvl0.value }}}
+		</div>
+		{{/_highlightResult.hierarchy.lvl0.value}}
+
+		<div class="sub-section">
+			{{#_highlightResult.hierarchy.lvl1.value}}
+			<div class="h2">
+				<span class="hash">#</span> {{{ _highlightResult.hierarchy.lvl1.value }}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl1.value}}
+
+			{{#_highlightResult.hierarchy.lvl2.value}}
+			<div class="h3">
+				> {{{ _highlightResult.hierarchy.lvl2.value }}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl2.value}}
+
+			{{#_highlightResult.hierarchy.lvl3.value}}
+			<div class="h4">
+				> {{{ _highlightResult.hierarchy.lvl3.value }}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl3.value}}
+
+			{{#_highlightResult.hierarchy.lvl4.value}}
+			<div class="h5">
+				> {{{_highlightResult.hierarchy.lvl4.value}}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl4.value}}
+
+			{{#_highlightResult.hierarchy.lvl5.value}}
+			<div class="h6">
+				> {{{_highlightResult.hierarchy.lvl5.value}}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl5.value}}
+		</div>
+
+		{{#_highlightResult.content}}
+		<div class="content">
+			{{{ _highlightResult.content.value }}}
+		</div>
+		{{/_highlightResult.content}}
+	</div>
+</script>
+
+<script id="search_empty_template" type="text/template">
+	<div class="autocomplete-wrapper empty">
+		<div class="h2">We didn't find any result for "{{query}}". Sorry!</div>
+	</div>
+</script>
+
+<script id="search_footer_template" type="text/template">
+	<div class="footer">
+		<a target="_blank" href="https://www.algolia.com/?utm_source=laravel&utm_medium=link&utm_campaign=laravel_documentation_search">
+            <img width="105" src="/img/icons/algolia.min.svg" alt="Algolia">
+			<div style="clear: both"></div>
+		</a>
+	</div>
+</script>
+<script src="folder/app.js.download"></script>
+
+<script>
+    var _gaq=[['_setAccount','UA-23865777-1'],['_trackPageview']];
+    (function(d,t){
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)
+    }(document,'script'));
+</script>
+
+
+</body></html>

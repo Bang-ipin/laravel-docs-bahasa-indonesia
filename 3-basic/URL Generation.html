@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://laravel.com/docs/7.x/urls -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>URL Generation - Laravel - The PHP Framework For Web Artisans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+        <link rel="canonical" href="https://laravel.com/docs/7.x/urls">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://laravel.com/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://laravel.com/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://laravel.com/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://laravel.com/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://laravel.com/img/favicon/safari-pinned-tab.svg" color="#ff2d20">
+    <link rel="shortcut icon" href="https://laravel.com/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ff2d20">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Load fonts -->
+    <link rel="stylesheet" href="folder/ins2wgm.css">
+
+    <!-- Load styles -->
+    <link rel="stylesheet" type="text/css" href="folder/app.css">
+
+    <!-- Load JS -->
+    <script src="folder/ga.js.download"></script><script src="folder/jquery.min.js.download"></script>
+
+<script id="_carbonads_projs" type="text/javascript" src="folder/CKYILK3E.json"></script></head>
+<body class="language-php">
+
+    <div class="sidebar_layout" id="docsScreen">
+
+        <div class="page_contain">
+            <div class="contain">
+                <aside class="sidebar">
+                    <a href="https://laravel.com/" class="logo">
+                        <img class="mark" src="folder/logomark.min.svg" alt="Laravel">
+                        <img class="type" src="folder/logotype.min.svg" alt="Laravel">
+                    </a>
+                    <nav>
+                        <div class="navigation_contain" style="display: block;">
+                            <div class="docs_sidebar">
+                                <ul>
+<li>
+<h2>Getting Started</h2>
+<ul>
+<li class="active"><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Installation.html">Installation</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Configuration.html">Configuration</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Directory%20Structure.html">Directory Structure</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Laravel%20Homestead.html">Homestead</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Laravel%20Valet.html">Valet</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/1-introducing/Deployment.html">Deployment</a></li>
+</ul>
+</li>
+<li>
+<h2>Architecture Concepts</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Request%20Lifecycle.html">Request Lifecycle</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Service%20Container.html">Service Container</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Service%20Providers.html">Service Providers</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Facades.html">Facades</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/2-architecture/Contracts.html">Contracts</a></li>
+</ul>
+</li>
+<li  class="sub--on">
+<h2>The Basics</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Routing.html">Routing</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Middleware.html">Middleware</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/CSRF%20Protection.html">CSRF Protection</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Controllers.html">Controllers</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/HTTP%20Requests.html">Requests</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/HTTP%20Responses.html">Responses</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Views.html">Views</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/URL%20Generation.html">URL Generation</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/HTTP%20Session.html">Session</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Validation.html">Validation</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Error%20Handling.html">Error Handling</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/3-basic/Logging.html">Logging</a></li>
+</ul>
+</li>
+<li>
+<h2>Frontend</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/4-front-end/Blade%20Templates.html">Blade Templates</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/4-front-end/Localization.html">Localization</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/4-front-end/JavaScript%20&%20CSS%20Scaffolding.html">Frontend Scaffolding</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/4-front-end/Compiling%20Assets%20(Mix).html">Compiling Assets</a></li>
+</ul>
+</li>
+<li>
+<h2>Security</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Authentication.html">Authentication</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Authorization.html">Authorization</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Email%20Verification.html">Email Verification</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Encryption.html">Encryption</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Hashing.html">Hashing</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/5-security/Resetting%20Passwords.html">Password Reset</a></li>
+</ul>
+</li>
+<li>
+<h2>Digging Deeper</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Artisan%20Console.html">Artisan Console</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Broadcasting.html">Broadcasting</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Cache.html">Cache</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Collections.html">Collections</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Events.html">Events</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/File%20Storage.html">File Storage</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Helpers.html">Helpers</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/HTTP%20Client.html">HTTP Client</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Mail.html">Mail</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Notifications.html">Notifications</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Package%20Development.html">Package Development</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Queues.html">Queues</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/6-digging-deeper/Task%20Scheduling.html">Task Scheduling</a></li>
+</ul>
+</li>
+<li>
+<h2>Database</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Getting%20Started.html">Getting Started</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Query%20Builder.html">Query Builder</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Pagination.html">Pagination</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Migrations.html">Migrations</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Database_%20Seeding.html">Seeding</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/7-database/Redis.html">Redis</a></li>
+</ul>
+</li>
+<li>
+<h2>Eloquent ORM</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Getting%20Started.html">Getting Started</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Relationships.html">Relationships</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Collections.html">Collections</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Mutators.html">Mutators</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20API%20Resources.html">API Resources</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/8-eloquent-ORM/Eloquent_%20Serialization.html">Serialization</a></li>
+</ul>
+</li>
+<li>
+<h2>Testing</h2>
+<ul>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Testing_%20Getting%20Started.html">Getting Started</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/HTTP%20Tests.html">HTTP Tests</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Console%20Tests.html">Console Tests</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Laravel%20Dusk.html">Browser Tests</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Database%20Testing.html">Database</a></li>
+<li><a href="file:///E:/IPIN-FILE/4-REPO/Laravel-docs/9-testing/Mocking.html">Mocking</a></li>
+</ul>
+</li>
+<li>
+<h2>Official Packages</h2>
+<ul>
+<li><a href="https://laravel.com/docs/7.x/billing">Cashier (Stripe)</a></li>
+<li><a href="#">Cashier (Mollie)</a></li>
+<li><a href="#">Dusk</a></li>
+<li><a href="#">Envoy</a></li>
+<li><a href="#">Horizon</a></li>
+<li><a href="#">Passport</a></li>
+<li><a href="#">Sanctum</a></li>
+<li><a href="#">Scout</a></li>
+<li><a href="#">Socialite</a></li>
+<li><a href="#">Telescope</a></li>
+</ul>
+</li>
+</ul>
+                            </div>
+
+                            <script async="" type="text/javascript" src="folder/carbon.js.download" id="_carbonads_js"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://forge.laravel.com/" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="folder/dabf8eec0afae2a669e68d8dc1092605.jpg" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://forge.laravel.com/" class="carbon-text" target="_blank" rel="noopener sponsored">Deploy Laravel and PHP applications on DigitalOcean, Linode, &amp; AWS.</a></span><a href="http://carbonads.net/?utm_source=laravelcom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+
+
+                        </div>
+                    </nav>
+                    <div class="trigger_contain">
+                        <a href="https://laravel.com/docs/7.x/urls#" class="nav_trigger" aria-label="Menu">
+                            <div class="bar"></div>
+                        </a>
+                    </div>
+                </aside>
+
+                <section class="body_content">
+                    <header class="docs_actions">
+                        <div class="version_drop">
+                            <div class="input_group">
+                                <label>Version</label>
+                                <div class="custom_select">
+                                    <select id="version_switcher" aria-label="Laravel version">
+                                                                                    <option value="https://laravel.com/docs/master/urls">Master</option>
+                                                                                    <option selected="" value="https://laravel.com/docs/7.x/urls">7.x</option>
+                                                                                    <option value="https://laravel.com/docs/6.x/urls">6.x</option>
+                                                                                    <option value="https://laravel.com/docs/5.8/urls">5.8</option>
+                                                                                    <option value="https://laravel.com/docs/5.7/urls">5.7</option>
+                                                                                    <option value="https://laravel.com/docs/5.6/urls">5.6</option>
+                                                                                    <option value="https://laravel.com/docs/5.5/urls">5.5</option>
+                                                                                    <option value="https://laravel.com/docs/5.4/urls">5.4</option>
+                                                                                    <option value="https://laravel.com/docs/5.3/urls">5.3</option>
+                                                                                    <option value="https://laravel.com/docs/5.2/urls">5.2</option>
+                                                                                    <option value="https://laravel.com/docs/5.1/urls">5.1</option>
+                                                                                    <option value="https://laravel.com/docs/5.0/urls">5.0</option>
+                                                                                    <option value="https://laravel.com/docs/4.2/urls">4.2</option>
+                                                                            </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search_contain">
+                            <div class="input_group search icon">
+                                <span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input type="text" class="search_input tt-input" id="search-docs-input" placeholder="Search Docs" aria-label="Search in the documentation" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: scandia-web, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0.5px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="tt-dataset-0"></div></span></span>
+                                <input type="submit" class="search_submit icon_display">
+                            </div>
+                        </div>
+                    </header>
+                    <section class="docs_body">
+                        <section class="docs_main">
+                            
+                            <h1>URL Generation</h1>
+<ul>
+<li><a href="https://laravel.com/docs/7.x/urls#introduction">Introduction</a></li>
+<li><a href="https://laravel.com/docs/7.x/urls#the-basics">The Basics</a>
+<ul>
+<li><a href="https://laravel.com/docs/7.x/urls#generating-basic-urls">Generating Basic URLs</a></li>
+<li><a href="https://laravel.com/docs/7.x/urls#accessing-the-current-url">Accessing The Current URL</a></li>
+</ul></li>
+<li><a href="https://laravel.com/docs/7.x/urls#urls-for-named-routes">URLs For Named Routes</a>
+<ul>
+<li><a href="https://laravel.com/docs/7.x/urls#signed-urls">Signed URLs</a></li>
+</ul></li>
+<li><a href="https://laravel.com/docs/7.x/urls#urls-for-controller-actions">URLs For Controller Actions</a></li>
+<li><a href="https://laravel.com/docs/7.x/urls#default-values">Default Values</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2 id="introduction"><a href="https://laravel.com/docs/7.x/urls#introduction">Introduction</a></h2>
+<p>Laravel provides several helpers to assist you in generating URLs for your application. These are mainly helpful when building links in your templates and API responses, or when generating redirect responses to another part of your application.</p>
+<p><a name="the-basics"></a></p>
+<h2 id="the-basics"><a href="https://laravel.com/docs/7.x/urls#the-basics">The Basics</a></h2>
+<p><a name="generating-basic-urls"></a></p>
+<h3 id="generating-basic-urls"><a href="https://laravel.com/docs/7.x/urls#generating-basic-urls">Generating Basic URLs</a></h3>
+<p>The <code class=" language-php">url</code> helper may be used to generate arbitrary URLs for your application. The generated URL will automatically use the scheme (HTTP or HTTPS) and host from the current request:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$post</span> <span class="token operator">=</span> App\<span class="token package">Post</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">echo</span> <span class="token function">url</span><span class="token punctuation">(</span><span class="token double-quoted-string string">"/posts/<span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$post</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">id</span><span class="token punctuation">}</span></span>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// http://example.com/posts/1</span></code></pre>
+<p><a name="accessing-the-current-url"></a></p>
+<h3 id="accessing-the-current-url"><a href="https://laravel.com/docs/7.x/urls#accessing-the-current-url">Accessing The Current URL</a></h3>
+<p>If no path is provided to the <code class=" language-php">url</code> helper, a <code class=" language-php">Illuminate\<span class="token package">Routing<span class="token punctuation">\</span>UrlGenerator</span></code> instance is returned, allowing you to access information about the current URL:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token comment">// Get the current URL without the query string...</span>
+<span class="token keyword">echo</span> <span class="token function">url</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">current</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Get the current URL including the query string...</span>
+<span class="token keyword">echo</span> <span class="token function">url</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">full</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Get the full URL for the previous request...</span>
+<span class="token keyword">echo</span> <span class="token function">url</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">previous</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Each of these methods may also be accessed via the <code class=" language-php"><span class="token constant">URL</span></code> <a href="https://laravel.com/docs/7.x/facades">facade</a>:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Support<span class="token punctuation">\</span>Facades<span class="token punctuation">\</span>URL</span><span class="token punctuation">;</span>
+
+<span class="token keyword">echo</span> <span class="token constant">URL</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">current</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><a name="urls-for-named-routes"></a></p>
+<h2 id="urls-for-named-routes"><a href="https://laravel.com/docs/7.x/urls#urls-for-named-routes">URLs For Named Routes</a></h2>
+<p>The <code class=" language-php">route</code> helper may be used to generate URLs to named routes. Named routes allow you to generate URLs without being coupled to the actual URL defined on the route. Therefore, if the route's URL changes, no changes need to be made to your <code class=" language-php">route</code> function calls. For example, imagine your application contains a route defined like the following:</p>
+<pre class=" language-php"><code class=" language-php">Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'/post/{post}'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'post.show'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>To generate a URL to this route, you may use the <code class=" language-php">route</code> helper like so:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token keyword">echo</span> <span class="token function">route</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'post.show'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'post'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// http://example.com/post/1</span></code></pre>
+<p>You will often be generating URLs using the primary key of <a href="https://laravel.com/docs/7.x/eloquent">Eloquent models</a>. For this reason, you may pass Eloquent models as parameter values. The <code class=" language-php">route</code> helper will automatically extract the model's primary key:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token keyword">echo</span> <span class="token function">route</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'post.show'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'post'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$post</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>The <code class=" language-php">route</code> helper may also be used to generate URLs for routes with multiple parameters:</p>
+<pre class=" language-php"><code class=" language-php">Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'/post/{post}/comment/{comment}'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'comment.show'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">echo</span> <span class="token function">route</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'comment.show'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'post'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">'comment'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// http://example.com/post/1/comment/3</span></code></pre>
+<p><a name="signed-urls"></a></p>
+<h3 id="signed-urls"><a href="https://laravel.com/docs/7.x/urls#signed-urls">Signed URLs</a></h3>
+<p>Laravel allows you to easily create "signed" URLs to named routes. These URLs have a "signature" hash appended to the query string which allows Laravel to verify that the URL has not been modified since it was created. Signed URLs are especially useful for routes that are publicly accessible yet need a layer of protection against URL manipulation.</p>
+<p>For example, you might use signed URLs to implement a public "unsubscribe" link that is emailed to your customers. To create a signed URL to a named route, use the <code class=" language-php">signedRoute</code> method of the <code class=" language-php"><span class="token constant">URL</span></code> facade:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Support<span class="token punctuation">\</span>Facades<span class="token punctuation">\</span>URL</span><span class="token punctuation">;</span>
+
+<span class="token keyword">return</span> <span class="token constant">URL</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">signedRoute</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'unsubscribe'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'user'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>If you would like to generate a temporary signed route URL that expires, you may use the <code class=" language-php">temporarySignedRoute</code> method:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Support<span class="token punctuation">\</span>Facades<span class="token punctuation">\</span>URL</span><span class="token punctuation">;</span>
+
+<span class="token keyword">return</span> <span class="token constant">URL</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">temporarySignedRoute</span><span class="token punctuation">(</span>
+    <span class="token single-quoted-string string">'unsubscribe'</span><span class="token punctuation">,</span> <span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">addMinutes</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'user'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>Validating Signed Route Requests</h4>
+<p>To verify that an incoming request has a valid signature, you should call the <code class=" language-php">hasValidSignature</code> method on the incoming <code class=" language-php">Request</code>:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Request</span><span class="token punctuation">;</span>
+
+Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'/unsubscribe/{user}'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>Request <span class="token variable">$request</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span> <span class="token variable">$request</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">hasValidSignature</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">abort</span><span class="token punctuation">(</span><span class="token number">401</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'unsubscribe'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Alternatively, you may assign the <code class=" language-php">Illuminate\<span class="token package">Routing<span class="token punctuation">\</span>Middleware<span class="token punctuation">\</span>ValidateSignature</span></code> middleware to the route. If it is not already present, you should assign this middleware a key in your HTTP kernel's <code class=" language-php">routeMiddleware</code> array:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token comment">/**
+ * The application's route middleware.
+ *
+ * These middleware may be assigned to groups or used individually.
+ *
+ * @var array
+ */</span>
+<span class="token keyword">protected</span> <span class="token variable">$routeMiddleware</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token single-quoted-string string">'signed'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> \<span class="token package">Illuminate<span class="token punctuation">\</span>Routing<span class="token punctuation">\</span>Middleware<span class="token punctuation">\</span>ValidateSignature</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+<p>Once you have registered the middleware in your kernel, you may attach it to a route. If the incoming request does not have a valid signature, the middleware will automatically return a <code class=" language-php"><span class="token number">403</span></code> error response:</p>
+<pre class=" language-php"><code class=" language-php">Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'/unsubscribe/{user}'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>Request <span class="token variable">$request</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'unsubscribe'</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'signed'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><a name="urls-for-controller-actions"></a></p>
+<h2 id="urls-for-controller-actions"><a href="https://laravel.com/docs/7.x/urls#urls-for-controller-actions">URLs For Controller Actions</a></h2>
+<p>The <code class=" language-php">action</code> function generates a URL for the given controller action. You do not need to pass the full namespace of the controller. Instead, pass the controller class name relative to the <code class=" language-php">App\<span class="token package">Http<span class="token punctuation">\</span>Controllers</span></code> namespace:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$url</span> <span class="token operator">=</span> <span class="token function">action</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'HomeController@index'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>You may also reference actions with a "callable" array syntax:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token keyword">use</span> <span class="token package">App<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Controllers<span class="token punctuation">\</span>HomeController</span><span class="token punctuation">;</span>
+
+<span class="token variable">$url</span> <span class="token operator">=</span> <span class="token function">action</span><span class="token punctuation">(</span><span class="token punctuation">[</span>HomeController<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">'index'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>If the controller method accepts route parameters, you may pass them as the second argument to the function:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token variable">$url</span> <span class="token operator">=</span> <span class="token function">action</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'UserController@profile'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'id'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><a name="default-values"></a></p>
+<h2 id="default-values"><a href="https://laravel.com/docs/7.x/urls#default-values">Default Values</a></h2>
+<p>For some applications, you may wish to specify request-wide default values for certain URL parameters. For example, imagine many of your routes define a <code class=" language-php"><span class="token punctuation">{</span>locale<span class="token punctuation">}</span></code> parameter:</p>
+<pre class=" language-php"><code class=" language-php">Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'/{locale}/posts'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'post.index'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>It is cumbersome to always pass the <code class=" language-php">locale</code> every time you call the <code class=" language-php">route</code> helper. So, you may use the <code class=" language-php"><span class="token constant">URL</span><span class="token punctuation">:</span><span class="token punctuation">:</span>defaults</code> method to define a default value for this parameter that will always be applied during the current request. You may wish to call this method from a <a href="https://laravel.com/docs/7.x/middleware#assigning-middleware-to-routes">route middleware</a> so that you have access to the current request:</p>
+<pre class=" language-php"><code class=" language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Middleware</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Closure</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Support<span class="token punctuation">\</span>Facades<span class="token punctuation">\</span>URL</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">SetDefaultLocaleForUrls</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token variable">$request</span><span class="token punctuation">,</span> Closure <span class="token variable">$next</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token constant">URL</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">defaults</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token single-quoted-string string">'locale'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$request</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">user</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">locale</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token variable">$next</span><span class="token punctuation">(</span><span class="token variable">$request</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></span></code></pre>
+<p>Once the default value for the <code class=" language-php">locale</code> parameter has been set, you are no longer required to pass its value when generating URLs via the <code class=" language-php">route</code> helper.</p>
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+<footer>
+    <div class="footer_contain" style="padding-top: 0;">
+        <div class="contain">
+            <section class="partner_block">
+                <div class="content">
+                    <h2>Become a Laravel Partner</h2>
+                    <p>Laravel Partners are elite shops providing top-notch Laravel development and consulting. Each of our partners can help you craft a beautiful, well-architected project.</p>
+                </div>
+                                <a href="https://laravel.com/partners" class="btn"><span>Our Partners</span></a>
+                            </section>
+        </div>
+
+        <div class="footer_bg">
+            <div class="contain">
+                <div class="footer_content">
+                    <div class="logotype">
+                        <img src="folder/logotype.min.svg" alt="Laravel">
+                    </div>
+                    <div class="search_box">
+
+                    </div>
+                </div>
+                <div class="footer_content">
+                    <div class="footer_nav">
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Highlights</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://laravel.com/docs/7.x/releases">Release Notes</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/installation">Getting Started</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/routing">Routing</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/blade">Blade Templates</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/authentication">Authentication</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/authorization">Authorization</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/artisan">Artisan Console</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/database">Database</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/eloquent">Eloquent ORM</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/testing">Testing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Resources</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://laracasts.com/">Laracasts</a></li>
+                                    <li><a href="https://laravel-news.com/">Laravel News</a></li>
+                                    <li><a href="https://laracon.us/">Laracon</a></li>
+                                    <li><a href="https://laracon.eu/">Laracon EU</a></li>
+                                    <li><a href="https://laracon.com.au/">Laracon AU</a></li>
+                                    <li><a href="https://larajobs.com/">Jobs</a></li>
+                                    <li><a href="https://certification.laravel.com/">Certification</a></li>
+                                    <li><a href="https://laracasts.com/discuss">Forums</a></li>
+                                    <!-- <li><a href="http://www.laravelpodcast.com/">Podcast</a></li> -->
+                                    <!-- <li><a href="https://course.testdrivenlaravel.com/">Test-driven Laravel</a></li> -->
+                                    <!-- <li><a href="https://statamic.com/">Statamic</a></li> -->
+<!--                                     <li><a href="https://styleci.io/">StyleCI</a></li>
+                                    <li><a href="https://cachethq.io/">Cachet</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Partners</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://vehikl.com/">Vehikl</a></li>
+                                    <li><a href="https://tighten.co/">Tighten Co.</a></li>
+                                    <li><a href="https://kirschbaumdevelopment.com/">Kirschbaum</a></li>
+                                    <li><a href="https://www.byte5.net/">Byte 5</a></li>
+                                    <li><a href="https://64robots.com/">64Robots</a></li>
+                                    <li><a href="https://cubettech.com/">Cubet</a></li>
+                                    <li><a href="https://devsquad.com/">DevSquad</a></li>
+                                    <li><a href="https://www.ideil.com/">Ideil</a></li>
+                                    <li><a href="https://www.cyber-duck.co.uk/how-we-work/technology/laravel?utm_source=Laravel%20Partner&amp;utm_medium=Sponsorship">Cyber-Duck</a></li>
+                                    <li><a href="https://corporate.aboutyou.de/app/uploads/2019/08/INTRO-Pitch-I-AY-Tech.pdf?utm_source=laravelpartnersfindoutmore&amp;utm_medium=socialgroups&amp;utm_campaign=tech">ABOUT YOU</a></li>
+                                    <li><a href="https://www.a2design.biz/">A2 Design</a></li>
+                                    <li><a href="https://romegadigital.com/">Romega Software</a></li>
+                                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeOTE1G6zxSPbKdmQ59UKkL_Rja_ddAyG6Y6xxGdSGAWlNTFA/viewform">Become A Partner</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_col">
+                            <span class="footer_nav_trigger">Ecosystem</span>
+                            <div class="footer_nav_contain">
+                                <ul>
+                                    <li><a href="https://vapor.laravel.com/">Vapor</a></li>
+                                    <li><a href="https://forge.laravel.com/">Forge</a></li>
+                                    <li><a href="https://envoyer.io/">Envoyer</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/horizon">Horizon</a></li>
+                                    <li><a href="https://lumen.laravel.com/">Lumen</a></li>
+                                    <li><a href="https://nova.laravel.com/">Nova</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/broadcasting">Echo</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/valet">Valet</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/mix">Mix</a></li>
+                                    <li><a href="https://spark.laravel.com/">Spark</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/billing">Cashier</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/homestead">Homestead</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/dusk">Dusk</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/passport">Passport</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/scout">Scout</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/socialite">Socialite</a></li>
+                                    <li><a href="https://laravel.com/docs/7.x/telescope">Telescope</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_info">
+                        <p class="small">Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in most web projects.</p>
+                        <p class="small copyright">Laravel is a Trademark of Taylor Otwell.<br>Copyright © 2011-2020 Laravel LLC.
+                        </p>
+                        <ul class="social_links">
+                            <li><a href="https://twitter.com/laravelphp"><img src="folder/twitter.min.svg" alt="Twitter"></a>
+                            </li>
+                            <li><a href="https://github.com/laravel"><img src="folder/github.min.svg" alt="GitHub"></a>
+                            </li>
+                            <li><a href="https://discord.gg/mPZNm7A"><img src="folder/discord.min.svg" alt="Discord"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://laravel.com/" class="logomark"><img src="folder/logomark.min.svg" alt="Laravel"></a>
+    </div>
+</footer>
+
+<script>
+    var algolia_app_id = 'BH4D9OD16A';
+    var algolia_search_key = '7dc4fe97e150304d1bf34f5043f178c4';
+    var version = '7.x';
+</script>
+
+<script id="search_suggestion_template" type="text/template">
+	<div class="autocomplete-wrapper">
+		{{#_highlightResult.hierarchy.lvl0.value}}
+		<div class="h1">
+			{{{ _highlightResult.hierarchy.lvl0.value }}}
+		</div>
+		{{/_highlightResult.hierarchy.lvl0.value}}
+
+		<div class="sub-section">
+			{{#_highlightResult.hierarchy.lvl1.value}}
+			<div class="h2">
+				<span class="hash">#</span> {{{ _highlightResult.hierarchy.lvl1.value }}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl1.value}}
+
+			{{#_highlightResult.hierarchy.lvl2.value}}
+			<div class="h3">
+				> {{{ _highlightResult.hierarchy.lvl2.value }}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl2.value}}
+
+			{{#_highlightResult.hierarchy.lvl3.value}}
+			<div class="h4">
+				> {{{ _highlightResult.hierarchy.lvl3.value }}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl3.value}}
+
+			{{#_highlightResult.hierarchy.lvl4.value}}
+			<div class="h5">
+				> {{{_highlightResult.hierarchy.lvl4.value}}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl4.value}}
+
+			{{#_highlightResult.hierarchy.lvl5.value}}
+			<div class="h6">
+				> {{{_highlightResult.hierarchy.lvl5.value}}}
+			</div>
+			{{/_highlightResult.hierarchy.lvl5.value}}
+		</div>
+
+		{{#_highlightResult.content}}
+		<div class="content">
+			{{{ _highlightResult.content.value }}}
+		</div>
+		{{/_highlightResult.content}}
+	</div>
+</script>
+
+<script id="search_empty_template" type="text/template">
+	<div class="autocomplete-wrapper empty">
+		<div class="h2">We didn't find any result for "{{query}}". Sorry!</div>
+	</div>
+</script>
+
+<script id="search_footer_template" type="text/template">
+	<div class="footer">
+		<a target="_blank" href="https://www.algolia.com/?utm_source=laravel&utm_medium=link&utm_campaign=laravel_documentation_search">
+            <img width="105" src="/img/icons/algolia.min.svg" alt="Algolia">
+			<div style="clear: both"></div>
+		</a>
+	</div>
+</script>
+<script src="folder/app.js.download"></script>
+
+<script>
+    var _gaq=[['_setAccount','UA-23865777-1'],['_trackPageview']];
+    (function(d,t){
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)
+    }(document,'script'));
+</script>
+
+
+</body></html>
